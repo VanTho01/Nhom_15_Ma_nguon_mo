@@ -1,0 +1,8 @@
+1. Chức năng tính đạo hàm cấp 2, cấp 3 từ mã nguồn
+- thuật toán: đạo hàm cấp 2, được tính bằng cách tính 2 lần liên tiếp đạo hàm cấp 1 và đạo hàm cấp 3 được tính tương tự là 3 lần
+2. Chức năng tính giới hạn 1 phía
+- thuật toán: + từ mã nguồn tính giới hạn 2 phía, giới hạn một phía được tính bằng các thêm toán tử "+"(GIỚI HẠN PHẢI), "-"(GIỚI HẠN TRÁI), vào hàm sympy.limit(), giá trị vô cùng không được sử dụng trong chức năng này, sẽ được "bẫy" trong chương trình, các hằng số tự nhiên như pi, e sẽ được kiểm tra tại đầu vào và thay bằng giá trị tương ứng được định nghĩa bằng thư viện sympy hay math
+              + chức năng vẽ đồ thị, sử dụng hàm plot() trong thư viện sympy, đồ thị có 2 phần là hàm số tính giới hạn và hàm số hằng y = giá trị giới hạn
+3: Giải phương trình 2 biến diophantine(phương trình 2 biến có nghiệm nguyên) và vẽ đồ thị
+- thuật toán: + chức năng giải phương trình 2 biến này được thực hiện bởi hàm sympy.solvers.diophantine(), ưu điểm của hàm này là giải được khá nhanh nhưng đồng thời cũng thiếu chính xác với các dạng phương trình phức tạp
+	      + chức năng vẽ đồ thị: vẽ đồ thị 2d của phương trình 1 biến được thực hiện bằng hàm plot() trong thư viện sympy, vẽ đồ thị 3d của phương trình 2 biến, đồ thị 3d này gồm 3 trục f(x, y), x, y, đầu ra là đồ thị 3d có thể tùy chỉnh
